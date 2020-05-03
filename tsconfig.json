@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    // 指定生成哪个模块系统代码： "None"， "CommonJS"， "AMD"， "System"， "UMD"， "ES6"或 "ES2015"
+    "moduleResolution": "node",
+    // 决定如何处理模块
+    "target": "es5",
+    // 指定ECMAScript目标版本
+    "outDir": "lib",
+    // 重定向输出目录
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017.object"
+    ],
+    // 编译过程中需要引入的库文件的列表
+    "declaration": true
+    // 生成相应的 .d.ts文件
+  },
+  "include": [
+    "src"
+  ]
+}

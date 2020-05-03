@@ -1,0 +1,23 @@
+{
+  "name": "ts-module-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["es", "lib"],
+  "scripts": {
+    "build:lib": "tsc --outDir lib --module commonjs",
+    "build:es": "tsc --outDir es --module es6",
+    "build": "run-p build:*",
+    "clean": "rm -rf lib es;",
+    "prepare": "run-s clean build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "typescript": "^3.8.3"
+  }
+}
